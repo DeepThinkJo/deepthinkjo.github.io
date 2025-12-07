@@ -1,0 +1,29 @@
+site_name: DeepThinkJo
+site_description: Personal hub of DeepThinkJo — Think Deeply, Learn Systematically, and Engineer with Purpose.
+site_url: https://deepthinkjo.github.io
+
+docs_dir: docs
+
+theme:
+  name: material
+
+use_directory_urls: true
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Deep Notes: https://deepthinkjo.github.io/Deep_Notes/
