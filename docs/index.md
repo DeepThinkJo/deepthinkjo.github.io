@@ -1,7 +1,7 @@
 # DeepThinkJo  
 > **Think Deeply. Engineer with Purpose.**
 
-Welcome — I’m **DeepThinkJo (Seunghwan Jo)**, an aspiring **AI Engineer**.  
+Welcome — I’m **DeepThinkJo (조승환)**, an aspiring **AI Engineer & Researcher**.  
 This is my personal hub, where I organize my learning journey, deep thinking philosophy, and long-term engineering goals.
 
 ---
