@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "DeepThinkJo / Think Deeply — AI Engineering & Research, Math, Systems"
+title                    : "DeepThinkJo"
 title_separator          : "-"
 name                     : &name "Seunghwan Jo"
-description              : &description "Jo's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Think Deeply - AI engineering % research"
 url                      : https://deepthinkjo.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "DeepThinkJo/deepthinkjo.github.io"
@@ -23,13 +23,13 @@ repository               : "DeepThinkJo/deepthinkjo.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Seunghwan Jo"
+  pronouns         : "he/him"
+  bio              : "Think Deeply - building toward AI engineering & research"
+  location         : "Seongnam, South Korea"
+  employer         : "Sungkyunkwan University (B.S. Computer Science & Engineering)"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "deepthinkjo@gmail.com" 
 
   # Academic websites
   academia         : # URL
@@ -280,7 +280,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comments: true
   # _talks
   - scope:
       path: ""
@@ -301,7 +301,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 
 # Plugins
