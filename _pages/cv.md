@@ -1,64 +1,81 @@
 ---
-layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
+layout: single
 ---
 
-{% include base_path %}
+## Education
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+**Sungkyunkwan University (SKKU)**  
+B.S. in Software Engineering  
+- Transferred from Data Science  
+- Expected Graduation: 2028
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+---
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Research & Engineering Interests
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- AI Engineering & Machine Learning
+- Mathematical Foundations for AI  
+  (Linear Algebra, Probability, Optimization)
+- Video Understanding & World Models
+- Model Compression & Efficient AI Systems
+- Robotics (Perception-oriented)
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+---
+
+## Projects
+
+### Linear Algebra Engine (Python)
+Personal project for understanding linear algebra at the implementation level.
+
+- Designed and implemented custom `Vector` and `Matrix` classes
+- Implemented core linear algebra operations  
+  (row operations, LU factorization, eigen-related computations)
+- Focused on translating mathematical definitions into executable systems
+- Goal: rebuilding mathematical knowledge in my own language through code
+
+---
+
+### Building AI Models from Scratch (Python)
+Ongoing exploratory projects for understanding machine learning models beyond API usage.
+
+- Implementing classical ML models from first principles
+- Studying the relationship between mathematical formulation and computational behavior
+- Emphasis on model structure, limitations, and failure modes
+
+---
+
+## Skills
+
+**Programming**
+- Python (primary)
+- Familiar with Linux-based development environments
+
+**Mathematics**
+- Linear Algebra
+- Calculus
+- Probability & Statistics (in progress)
+- Optimization (in progress)
+
+**Tools**
+- Git / GitHub
+- VS code / Colab
+- Markdown-based technical writing
+
+---
+
+## Learning Philosophy (Brief)
+
+- Value both bottom-up knowledge accumulation and top-down goal-driven learning
+- Revisit learned concepts to reconstruct motivation and intuition
+- Focus on defining problems clearly before attempting solutions
+
+---
+
+## Current Status
+
+- Undergraduate student in Software Engineering
+- Preparing for advanced AI engineering and research paths
+- Actively building foundational projects and thinking-oriented technical writing
