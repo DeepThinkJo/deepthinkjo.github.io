@@ -1,4 +1,7 @@
 main:
+  - title: "Home"
+    url: /
+
   - title: "About"
     url: /about/
 
@@ -7,9 +10,6 @@ main:
 
   - title: "Projects"
     url: /portfolio/
-
-  - title: "Notes"
-    url: /notes/
 
   - title: "CV"
     url: /cv/
