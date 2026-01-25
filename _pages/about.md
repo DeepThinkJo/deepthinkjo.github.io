@@ -5,78 +5,105 @@ author_profile: true
 layout: single
 ---
 
-## Think Deeply
+## One-Paragraph Identity
 
 **DeepThinkJo**는  
-단순히 모델을 사용하는 사람이 아니라,  
-**수학과 시스템을 이해하며 AI를 설계하고 구현하는 엔지니어/리서처**가 되기 위한 여정을 기록하는 공간입니다.
+AI와 함께 빠르게 변화하는 세상에서 수동적으로 살아가는 사람이 아닌,  
+**넓은 시야와 깊은 생각을 바탕으로 AI를 설계하고 구현하는 Engineer & Researcher**가 되기 위해 만들어진 이름입니다.
 
-저는 “빠르게 따라가는 것”보다  
-**깊이 이해하고, 오래 쓸 수 있는 기반을 만드는 것**을 더 중요하게 생각합니다.
-
----
-
-## Who I Am
-
-- 이름: **조승환 (Seunghwan Jo)**
-- 전공: **Software Engineering (B.S.)**
-- 관심 분야:
-  - Machine Learning / AI Engineering
-  - Mathematical Foundations (Linear Algebra, Probability, Optimization)
-  - Video Understanding & World Models
-  - Model Compression & Efficient AI Systems
-  - Robotics (perception 중심)
-
-현재는 학부 과정에서 기초를 다지며,  
-AI 엔지니어이자 장기적으로는 **ML Researcher**로 성장하기 위한 준비를 하고 있습니다.
+저는 지식을 많이 아는 것 자체보다,  
+그 지식의 동기와 문제를 재정의하고  
+해결로 연결하는 능력이  
+더 오래 남는 실력이라고 믿습니다.
 
 ---
 
-## What I’m Working On
+## Where My Thinking Changed
 
-이 블로그와 GitHub에서는 다음과 같은 작업을 진행하고 있습니다.
+한동안 저는 공부를 “지식을 체계적으로 정리하는 일”로 생각했습니다.  
+노트를 만들고, 구조를 잡고, 빠짐없이 기록하는 것이 성장이라고 믿었습니다.
+
+하지만 어느 순간부터  
+노트는 늘어나는데 사고는 깊어지지 않는다는 느낌을 받기 시작했습니다.
+
+- 이 내용을 지금 내가 정말 필요로 하는가  
+- 중요한 부분과 그렇지 않은 부분을 구분하고 있는가  
+- 이해한 것과 옮겨 적은 것을 혼동하고 있지는 않은가
+- 미래의 나는 옮겨 적은 노트와 교과서 중 무엇을 선택할 것인가
+
+이 질문들에 명확히 답할 수 없다는 사실이  
+제가 공부하는 방식을 다시 돌아보게 만든 계기였습니다.
+
+---
+
+## How I Learn and Work Now
+
+지금의 저는,  
+무언가를 배울 때 다음을 고민합니다.
+
+- 이 문제는 왜 중요한가  (Motivation)  
+- 이 개념은 어떻게 활용될 수 있는가  (Application)  
+- 다른 개념과 어떤 연관이 있는가  (Network)  
+- 이 개념의 한계가 무엇이며 어떻게 극복할 수 있는가  (New Problem Identification)
+- 지금까지 쌓아온 지식과 (Bottom-Up) 나의 목표 (Top-Down) 사이 나의 위치
+
+모든 것을 기계적으로 정리하려 하지는 않습니다. 
+
+대신 **넓은 시야와 깊은 생각으로**,  
+지식의 동기와 활용성을 고려합니다.
+
+이 블로그의 글과 프로젝트들은  
+이러한 선택과 판단의 흔적에 가깝습니다.
+
+---
+
+## What I’m Building
+
+현재는 다음과 같은 작업들을 진행하고 있습니다.
 
 - **Linear Algebra Engine (Python)**  
-  수학 개념을 “라이브러리 수준”으로 이해하기 위한 개인 프로젝트  
-- **Learning Logs & Dev Logs**  
-  공부 과정, 설계 결정, 시행착오를 기록
+  공식을 암기하는 대신,  
+  수학 개념을 코드와 설계로 재구성하기 위한 개인 프로젝트
+- **Thinking-Oriented Blog**  
+  정리된 지식보다 사고의 변화와 판단 과정을 기록
+- **Building AI Models from Scratch (Python)**
+  실제 모델 구현 프로젝트
 
-결과물보다 **사고 과정과 구조**를 남기는 것을 목표로 합니다.
-
----
-
-## Why This Blog Exists
-
-이 블로그는 튜토리얼 모음이나 정답 노트가 아닙니다.
-
-- *왜* 이런 설계를 선택했는지  
-- *무엇을* 이해하지 못했고, 어떻게 정리했는지  
-- *어디까지* 이해했고, 무엇이 남아 있는지  
-
-를 솔직하게 기록하기 위한 공간입니다.
-
-미완성의 기록도 남깁니다.  
-그 자체가 성장의 증거라고 믿기 때문입니다.
+결과보다 구조와 사고 과정을 남기는 것을 더 중요하게 생각합니다.
 
 ---
 
-## Philosophy
+## How to Read This Site
 
-> **Think Deeply. Build Carefully. Learn Continuously.**
+이 사이트는 튜토리얼 모음이나 정답 노트가 아닙니다.
 
-- 유행보다 원리
-- 속도보다 방향
-- 결과보다 구조
+- 미완성의 생각이 남아 있을 수 있고  
+- 과거의 판단이 이후에 바뀔 수도 있으며  
+- 질문만 남기고 끝나는 글도 있을 수 있습니다  
 
-이 원칙을 중심에 두고 학습하고, 만들고, 기록합니다.
-
----
-
-## Links
-
-- GitHub: [https://github.com/deepthinkjo](https://github.com/deepthinkjo)
-- Blog: [https://deepthinkjo.github.io](https://deepthinkjo.github.io)
+이 모든 것은  
+**사고가 고정되지 않았다는 증거**라고 생각합니다.
 
 ---
 
-*This site is a living document — it will evolve as I do.*
+## A Small Boundary
+
+제가 중요하게 생각하지 않는 것들도 분명히 존재합니다.
+
+- 동기 없는 학습  
+- 정리 그 자체가 목적이 되는 공부    
+
+이 기준선은  
+제가 무엇을 선택하고 무엇을 버릴지 결정하는 데 도움을 줍니다.
+
+---
+
+## Closing
+
+이 About 페이지는  
+완성된 소개가 아니라, **지금 시점의 기록**입니다.
+
+생각이 바뀌면,  
+이 페이지 역시 함께 바뀔 것입니다.
+
+That is part of the process.
