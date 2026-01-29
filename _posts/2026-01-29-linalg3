@@ -1,0 +1,163 @@
+---
+layout: post
+title: "Reconstructing Linear Algebra (3): Isomorphism and Mathematical Modeling"
+date: 2026-01-29 22:00:00 +0900
+categories: [Reconstructing-Linear-Algebra]
+tags: [Linear-Algebra, Isomorphism, Mathematical-Modeling, Engineering, ODE]
+mathjax: true
+---
+
+지금까지 공부하며 학문을 대하는 태도에 대해 가장 깊게 고민해보게 만든 과목은 linear algebra였다.  
+특히 이 과목을 통해, 공학자로서 학문을 *어떻게 이해하고, 어떻게 활용해야 하는가*에 대해 다시 생각하게 되었다.
+
+이 글에서는 linear algebra의 핵심 개념 중 하나인 **isomorphism**으로부터, engineer의 problem-solving strategy 중 하나인 **mathematical modeling**을 떠올리게 된 과정을 정리해보고자 한다.
+
+---
+
+## Isomorphism이란 무엇인가
+
+먼저 isomorphism의 정의부터 살펴보자.
+
+**Definition (Isomorphism).**  
+Let $V$ and $W$ be vector spaces.  
+We say that $V$ and $W$ are *isomorphic* if there exists an invertible linear transformation between $V$ and $W$.  
+Such a transformation is called an *isomorphism*.
+
+이 개념과 함께 자주 등장하는 중요한 정리도 하나 있다.
+
+**Theorem.**  
+Let $V$ and $W$ be vector spaces.  
+If $V$ and $W$ are finite-dimensional and
+
+$$
+\dim(V) = \dim(W),
+$$
+
+then $V$ and $W$ are isomorphic.
+
+이 정리가 말해주는 바는 분명하다.  
+두 vector space의 **구조가 같은지 여부**는, 그 사이에 **invertible linear transformation이 존재하는지**로 판단할 수 있고, finite-dimensional한 경우에는 **dimension만 비교해도 충분하다**는 것이다.
+
+---
+
+## 왜 이 개념이 중요한가
+
+이 개념의 중요성은 단순히 “추상적으로 구조가 같다”는 사실에 있지 않다.  
+오히려 다음과 같은 질문에서 그 힘이 드러난다.
+
+> 어떤 대상을, 굳이 지금의 형태로 다뤄야 할까?
+
+예를 들어, 5차 다항식을 하나 결정하려면
+
+$$
+a_0 + a_1 x + \cdots + a_5 x^5
+$$
+
+와 같이 6개의 계수 $a_0, \dots, a_5$가 정해져야 한다.
+
+이때 우리는 이 다항식을 **항상 polynomial의 형태로 다뤄야 할까?**
+
+만약 미정계수법처럼 계수들을 직접 구해야 하는 문제를 풀고 있다면, 다항식 그 자체보다
+
+$$
+(a_0, a_1, \dots, a_5) \in \mathbb{R}^6
+$$
+
+라는 형태로 생각하는 편이 훨씬 수월할 수 있다.
+
+이렇게 생각할 수 있는 이유가 바로 **isomorphism**이다.  
+우리는 이미 무의식적으로
+
+- 6차원 polynomial space의 한 원소를
+- $\mathbb{R}^6$의 한 원소로 대응시키는
+
+isomorphism을 사용하고 있었던 것이다.
+
+---
+
+## Isomorphism에서 Mathematical Modeling로
+
+이 예시는 단순한 계산 편의 이상의 의미를 가진다.
+
+다항식은 함수이고, 함수들의 집합은 function space이며, 이 공간은 vector space다.  
+따라서 우리는 polynomial이라는 대상을 **tuple로 바꾸는 순간**, 문제를 linear algebra의 범주 안으로 끌고오게 된다.
+
+이 과정은 단순한 표현 변경이 아니라, **문제를 해결 가능한 형태로 변환하는 과정**이다.  
+이런 변환을 우리는 **mathematical modeling**이라고 부른다.
+
+즉,
+
+- 복잡하거나 직접 계산하기 힘든 대상을
+- 계산 가능한 mathematical object로 바꾸고
+- 그 안에서 문제를 해결하는 것
+
+이것이 modeling의 핵심이다.
+
+위의 다항식 예시는, polynomial이라는 대상을 tuple로 바꿈으로써 real-world problem을 **mathematically solvable problem**으로 바꾼 사례라고 볼 수 있다.  
+(이 해결책이 가능한 이유는 모든 polynomial의 set이 vector space였기 때문이다.)
+
+---
+
+## Engineer의 관점에서 Linear Algebra
+
+Linear algebra는 매우 활용 범위가 넓은 과목이다.  
+array, arrow, signal, function, sequence, matrix와 같이 서로 전혀 달라 보이는 대상들이 모두 vector로 취급될 수 있다는 사실을 알려준다.
+
+하지만 우리는 수학자가 아니라 **공학자**다.  
+따라서 이 사실을 *아는 것*에서 멈추기보다, **우리의 목적에 맞게 이 개념을 사용하는 것**이 중요하다.
+
+특히 우리는 컴퓨터라는 강력한 연산 도구를 가지고 있다.  
+따라서 직접 계산하기 힘든 대상이라 하더라도, isomorphism을 통해 그것을 array나 $n$-tuple 형태의 vector로 표현할 수 있다면 문제는 곧바로 **computable problem**으로 바뀐다.
+
+---
+
+## 이 생각의 출발점: Linear ODE
+
+이러한 관점을 갖게 된 결정적인 계기는 공업수학에서 **linear ODE**를 공부하던 순간이었다.
+
+Differential equation은 보통
+
+- 1st order ODE
+- higher order ODE
+
+로 나뉘어 설명되는데, order가 높아질수록 해결 가능한 ODE의 형태가 점점 제한된다.  
+그 제한된 형태가 바로 **linear ODE**였다.
+
+이 지점에서 자연스럽게 이런 생각이 들었다.
+
+> 복잡해 보이는 미분방정식이라도 linearity가 보장되는 순간,  
+> 우리는 그 문제를 linear algebra의 개념을 활용해 풀 수 있다.
+
+실제로 higher order ODE이면서 non-linear한 경우에도, linearization이나 linear approximation을 통해 문제를 강제로 linear하게 만드는 해결책이 등장한다.
+
+---
+
+## 구조의 유사성에 대한 직관
+
+특히 인상 깊었던 것은 **linear ODE의 general solution의 구조**였다.
+
+- homogeneous solution  
+- particular solution  
+- 그리고 그 합으로 표현되는 전체 solution set  
+
+이 구조는 non-homogeneous linear system의 solution set 구조와 매우 닮아 있었다.
+
+이 유사성은 단순한 우연이 아니라, 두 문제가 같은 **선형 구조** 위에 놓여 있다는 신호처럼 느껴졌다.
+
+---
+
+## Linear Algebra를 다시 정의하며
+
+이러한 경험들을 종합하고 나니, linear algebra를 나만의 언어로, 공학자의 intention으로 다시 정의하고 싶어졌다.
+
+> **Linear Algebra란, linearity가 포함된 problem을 풀기 위한 개념과 구조를 제공하는 학문이다.**
+
+그리고 공학자로서 학문을 대하는 바람직한 태도는, 개념을 그대로 따라가는 것이 아니라 **필요에 맞게 활용하는 것**이라는 생각에 이르게 되었다.
+
+---
+
+## 마무리
+
+이 글은 isomorphism이라는 개념에서 출발해, mathematical modeling이라는 공학적 문제 해결 전략으로 사고가 확장된 과정을 정리한 기록이다.
+
+Reconstructing Linear Algebra 시리즈에서 이 글은 처음으로 **“이 개념들이 왜 실제 문제 해결에서 강력한가”**를 본격적으로 다루는 지점이 될 것이다.
