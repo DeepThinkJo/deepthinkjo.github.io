@@ -38,7 +38,7 @@ Knowledge gains true value only when it is applied. I constantly reflect on how 
 
 ---
 
-## 🛠 Skills & Interests
+## Skills & Interests
 
 * **Mathematics for AI**: Focusing on the structural properties of Linear Algebra and Calculus.
 * **Machine Learning**: Exploring Deep Learning architectures and their mathematical formulations.
